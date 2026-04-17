@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.panel {
+  width: min(92vw, 42rem);
+  padding: 2rem;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.75rem 1rem;
+}
+
+#issue-list {
+  list-style: none;
+  padding: 0;
+}

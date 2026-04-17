@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harnessed App</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="panel">
+        <p class="eyebrow">Harness first</p>
+        <h1>Issue Tracker</h1>
+        <form id="issue-form">
+          <input id="title" name="title" placeholder="Describe the issue" />
+          <select id="status" name="status">
+            <option value="todo">todo</option>
+            <option value="in-progress">in-progress</option>
+          </select>
+          <button type="submit">Create issue</button>
+        </form>
+        <p id="message"></p>
+        <ul id="issue-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
