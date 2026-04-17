@@ -12,7 +12,9 @@ function renderIssues(issues) {
 }
 
 async function loadIssues() {
-  // Fetch `/api/issues` and render the result.
+  const response = await fetch("/api/issues");
+  const issues = await response.json();
+  renderIssues(issues);
 }
 
 form.addEventListener("submit", async (event) => {
@@ -24,9 +26,23 @@ form.addEventListener("submit", async (event) => {
     status: formData.get("status")
   };
 
-  // POST the payload to `/api/issues`.
-  // Show an error in #message when the request fails.
-  // Reload the list when the request succeeds.
+  const response = await fetch("/api/issues", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+
+  if (!response.ok) {
+    const error = await response.json();
+    message.textContent = error.error;
+    return;
+  }
+
+  message.textContent = "Issue created.";
+  form.reset();
+  await loadIssues();
 });
 
 loadIssues();
