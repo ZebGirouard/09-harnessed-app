@@ -3,10 +3,18 @@
 ## Goal
 Build a small full-stack issue tracker and learn that the harness matters as much as the code.
 
+## What You Are Practicing
+- Reading the task before coding
+- Using acceptance criteria to guide implementation
+- Tracing one request from browser to server and back
+- Using tests as part of the harness, not as an afterthought
+
 ## Start Here
 1. Run `npm install`.
 2. Run `npm run dev`.
-3. Read the task, acceptance criteria, and definition of done before touching code.
+3. Read this README and `TASK.md` before touching code.
+4. Open `public/app.js` and `server.js`.
+5. Trace the first load flow before you work on the form submit flow.
 
 This repo is intentionally structured so a human or an AI agent can work inside the same constraints.
 
