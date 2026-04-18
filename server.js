@@ -15,8 +15,9 @@ app.get("/api/issues", (request, response) => {
 app.post("/api/issues", (request, response) => {
   const { title, status } = request.body;
 
-  // Reject empty titles with status 400.
-  // Create and return the new issue with status 201.
+  // Which input should this route validate first?
+  // What should the error response be when that input is missing?
+  // What fields does a new issue need before you return it?
 });
 
 app.listen(port, () => {

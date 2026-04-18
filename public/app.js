@@ -12,7 +12,8 @@ function renderIssues(issues) {
 }
 
 async function loadIssues() {
-  // Fetch `/api/issues` and render the result.
+  // Which route should the page call to load the starter issues?
+  // Once you get that data back, which function already knows how to draw it?
 }
 
 form.addEventListener("submit", async (event) => {
@@ -24,9 +25,9 @@ form.addEventListener("submit", async (event) => {
     status: formData.get("status")
   };
 
-  // POST the payload to `/api/issues`.
-  // Show an error in #message when the request fails.
-  // Reload the list when the request succeeds.
+  // Which route should receive this payload?
+  // What should the page show when the request fails?
+  // What should the page do next when the request succeeds?
 });
 
 loadIssues();

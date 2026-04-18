@@ -1,1 +1,1 @@
-Read `README.md` and `TASK.md` before coding. The acceptance criteria and tests tell you what matters.
+Read `README.md` and `TASK.md` before coding. If you get stuck, trace one request at a time: first load issues, then submit one issue, then compare that flow with the tests.
