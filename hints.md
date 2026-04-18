@@ -1,1 +1,1 @@
-Read the README before coding. The acceptance criteria and tests tell you what matters.
+Read `README.md` and `TASK.md` before coding. The acceptance criteria and tests tell you what matters.

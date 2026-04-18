@@ -13,6 +13,12 @@ This repo is intentionally structured so a human or an AI agent can work inside 
 ## Task
 Finish the issue tracker flow so the UI loads seed issues, creates a new issue, and shows the updated list without a full page refresh.
 
+## Constraints
+- Keep the API routes exactly at `/api/issues`.
+- Do not add a database.
+- Keep the UI in plain HTML, CSS, and browser JavaScript.
+- Make the smallest change that satisfies the acceptance criteria.
+
 ## Acceptance Criteria
 - The page loads the seed issues from the API on first render.
 - Submitting the form creates a new issue with a title and status.
@@ -23,6 +29,7 @@ Finish the issue tracker flow so the UI loads seed issues, creates a new issue, 
 - The acceptance criteria pass.
 - `npm test` passes.
 - The README examples still match the actual API.
+- The user can explain the request/response flow in one minute.
 
 ## Seed Data
 ```json
@@ -36,6 +43,11 @@ Finish the issue tracker flow so the UI loads seed issues, creates a new issue, 
 - Explain the current request/response flow and tell me what is missing.
 - Add the smallest possible implementation that satisfies the acceptance criteria.
 - Write a failing test first for creating a new issue, then implement the fix.
+
+## Common Mistakes
+- Changing the route names so the frontend and backend stop matching.
+- Updating the UI without checking the POST response.
+- Writing more architecture than the task needs.
 
 ## Stretch Goals
 - Add status filters.
